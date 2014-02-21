@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap 101 Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span1" style="background-color: white;"></div>
+        <div class="span11" style="background-color: white;">
+          <img src="./img/butoclub_header.png">
+          <img src="./img/step2_3partner.png"><br><br>
+          <form class="form-horizontal" action="./regist_step2_4.html">
+            <fieldset>
+              <legend>舞踏倶楽部　新規会員登録(ご希望のお相手について)</legend>
+              <span class="help-block">お相手に関するご希望をご入力ください。<br>ご入力が終わりましたら「次へ」ボタンを押してください。</span><br>
+              <div class="control-group">
+                <label class="control-label">希望するパートナー:</label>
+                <div class="controls">
+                  <select class="span3">
+                    <option>-</option>
+                    <option>アマチュア</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">希望するお相手の<br>ダンススタイル:</label>
+                <div class="controls">
+                  <select class="span3">
+                    <option>-</option>
+                    <option>スタンダードのみ</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">希望するお相手の級:</label>
+                <div class="controls">
+                  <select class="span3">
+                    <option>-</option>
+                    <option>5級以上</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">希望するお相手の身長:</label>
+                <div class="controls">
+                  <input type="text" class="input-mini"> cm
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">希望するお相手の<br>ダンス歴:</label>
+                <div class="controls">
+                  <select class="span1">
+                    <option>-</option>
+                    <option>0</option>
+                  </select> 年
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">希望するお相手の<br>競技経験の有無:</label>
+                <div class="controls">
+                  <label class="radio inline">
+                    <input type="radio" name="exp" value="exp1" checked>
+                    有
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="exp" value="exp2">
+                    無
+                  </label>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">パートナーを選ぶ時に<br>重視するポイント</label>
+                <div class="controls">
+                  <label class="checkbox">
+                    <input type="checkbox" value="partner1"> スキル
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="partner2"> ルックス
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="partner3"> 身体能力
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="partner4"> 性格(相性・フィーリング)
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="partner5"> 思いやり・誠実さ
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="partner6"> 自分を必要としている
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="partner7"> 時間厳守
+                  </label>
+                  <span class="help-block">(※複数回答可)</span>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">パートナーに対する<br>希望:</label>
+                <div class="controls">
+                  <textarea rows="6" class="input-xlarge"></textarea>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">フリーコメント(備考):</label>
+                <div class="controls">
+                  <textarea rows="6" class="input-xlarge"></textarea>
+                </div>
+              </div>
+              
+              <div class="form-actions" style="background-color: white;">
+                <button type="button" class="btn btn-large span2" onClick="history.back()">戻る</button>
+                <button type="submit" class="btn btn-large span2">次へ</button>
+              </div>
+            </fieldset>
+          </form>
+          <div>
+            <img src="./img/butoclub_logo.png">
+            <address>
+                〒102-0084<br>東京都千代田区二番町5番地2 麹町駅プラザ901<br>
+              <abbr title="Phone">TEL:</abbr> (123) 456-7890<br>
+              <abbr title="Fax">FAX:</abbr> (123) 456-7890<br>
+              <abbr title="Mail">MAIL:</abbr> <a href="mailto:#">sample@example.com</a>
+            </address>
+            <p>&copy; Company 2013</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

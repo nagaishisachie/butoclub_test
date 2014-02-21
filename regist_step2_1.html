@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap 101 Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      
+
+      <div class="row-fluid">
+        <div class="span1" style="background-color: white;"></div>
+        <div class="span11" style="background-color: white;">
+          <img src="./img/butoclub_header.png">
+          <img src="./img/step2_1profile.png"><br><br>
+          <form class="form-horizontal" action="./regist_step2_2.html">
+            <fieldset>
+              <legend>舞踏倶楽部　新規会員登録(基本プロフィール入力)</legend>
+              <span class="help-block">ご自身のプロフィールをご入力ください。<br>ご入力が終わりましたら「次へ」ボタンを押してください。</span><br>
+              <div class="control-group">
+                <label class="control-label">お名前:</label>
+                <div class="controls">
+                  <span>姓</span>
+                  <input type="text" class="input-small">
+                  <span>　名</span>
+                  <input type="text" class="input-small">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">ふりがな:</label>
+                <div class="controls">
+                  <span>姓</span>
+                  <input type="text" class="input-small">
+                  <span>　名</span>
+                  <input type="text" class="input-small">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">性別:</label>
+                <div class="controls">
+                  <label class="radio inline">
+                    <input type="radio" name="seibetsu" value="seibetsu1" checked>
+                    男性
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="seibetsu" value="seibetsu2">
+                    女性
+                  </label>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">生年月日:</label>
+                <div class="controls">
+                  <select class="span2">
+                    <option>-</option>
+                    <option>1900</option>
+                  </select> 年　
+                  <select class="span1">
+                    <option>-</option>
+                    <option>12</option>
+                  </select> 月　
+                  <select class="span1">
+                    <option>-</option>
+                    <option>31</option>
+                  </select> 日
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">身長:</label>
+                <div class="controls">
+                  <input type="text" class="input-mini"> cm
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">体型:</label>
+                <div class="controls">
+                  <select class="span2">
+                    <option>-</option>
+                    <option>痩せ型</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">お住まいの場所:</label>
+                <div class="controls">
+                  都道府県
+                  <select class="span2">
+                    <option>-</option>
+                    <option>北海道</option>
+                  </select>　
+                  市区町村
+                  <select class="span2">
+                    <option>-</option>
+                    <option>旭川市</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">練習したい場所:</label>
+                <div class="controls">
+                  都道府県 
+                  <select class="span2">
+                    <option>-</option>
+                    <option>北海道</option>
+                  </select>　
+                  市区町村 
+                  <select class="span2">
+                    <option>-</option>
+                    <option>旭川市</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">結婚:</label>
+                <div class="controls">
+                  <label class="radio inline">
+                    <input type="radio" name="kekkon" value="kekkon1" checked>
+                    既婚
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="kekkon" value="kekkon2">
+                    未婚
+                  </label>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">タバコ:</label>
+                <div class="controls">
+                  <label class="radio inline">
+                    <input type="radio" name="tobacco" value="tobacco1" checked>
+                    禁煙
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="tobacco" value="tobacco2">
+                    喫煙
+                  </label>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">プロフィール写真:</label>
+                <div class="controls">
+                  <input type="file" class="input-file">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">ご利用パスワード:</label>
+                <div class="controls">
+                  <input type="password" class="input-xlarge">
+                  <span>（※半角英数字 8文字以上20文字以内）</span>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" >ご利用パスワード:<br>(確認用 再入力)</label>
+                <div class="controls">
+                  <input type="password" class="input-xlarge">
+                  <span class="help-block">※当サイトご利用時のパスワードをご入力ください。<br>※第三者に推測されやすい番号（生年月日、電話番号、住所地番など）は避けてください。</span><br>
+                </div>
+              </div>
+
+              <div class="form-actions" style="background-color: white;">
+                <button type="submit" class="btn btn-large span2">次へ</button>
+              </div>
+            </fieldset>
+          </form>
+          <div>
+            <img src="./img/butoclub_logo.png">
+            <address>
+                〒102-0084<br>東京都千代田区二番町5番地2 麹町駅プラザ901<br>
+              <abbr title="Phone">TEL:</abbr> (123) 456-7890<br>
+              <abbr title="Fax">FAX:</abbr> (123) 456-7890<br>
+              <abbr title="Mail">MAIL:</abbr> <a href="mailto:#">sample@example.com</a>
+            </address>
+            <p>&copy; Company 2013</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

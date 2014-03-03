@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<!-- saved from url=(0015)http://buto.jp/ -->
-<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="ja">
+  <head>
     <meta charset="utf-8">
     <title>舞踏倶楽部</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="http://buto.jp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://buto.jp/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
     <!-- jQuery -->
-    <script src="./舞踏倶楽部_files/jquery.js"></script>
-    <script src="./舞踏倶楽部_files/bootstrap.min.js"></script>
-    <script src="./舞踏倶楽部_files/jquery.ah-placeholder.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.ah-placeholder.js"></script>
     <script>
     $(function() {
     $('[placeholder]').ahPlaceholder({
@@ -22,24 +22,26 @@
     });
     });
     </script>
-  <style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
-  <body style="">
+  </head>
+  <body>
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="container">
-          <img src="./舞踏倶楽部_files/butoclub_header.png">
-          <img src="./舞踏倶楽部_files/butoclub_topimage.png"><br><br>
+          <img src="./img/butoclub_header.png">
+          <img src="./img/butoclub_topimage.png"><br><br>
           <hr>
-          <form class="form-horizontal" action="http://buto.jp/mail_confirm.html">
-            <fieldset>
-              <legend class="text-center"><font size="6">【無料会員登録】</font></legend>
+          <form class="form-horizontal" role="form" action="http://buto.xpne.info/master/opAuthMailAddress/requestRegisterURL" method="POST">
+              <input type="hidden" name="request_register_url[course_id]" value="1">
+              <legend class="text-center"><font size="6">【さっそく無料会員登録をしてみましょう！】</font></legend>
               <div class="text-center">
                 <span class="help-block">下記にご自分のメールアドレスをご入力ください。ご入力後「メール送信」ボタンを押してください。</span><br>
-                <input type="text" class="input-xlarge" placeholder="メールアドレスを入力してください">
-                <button type="submit" class="btn"><i class="icon-envelope"></i>　メール送信</button><br><br>
-                <span class="help-block">※ご自分のメールアドレスがわからない方は<a href="mailto:sample@example.com">お問い合わせ</a>よりメール送信してください。<br>（<a href="mailto:sample@example.com">お問い合わせ</a>の文字をクリックしていただくとメールソフトが起動します。）</span>
+                  <div class="col-md-7">
+                      <input type="email" class="form-control input-xlarge"  id="inputEmail3" placeholder="メールアドレスを入力してください" name="request_register_url[mail_address]">
+                      <button type="submit" class="btn"><i class="icon-envelope"></i> メール送信</button><br><br></div>
+                  <span class="help-block">※ご自分のメールアドレスがわからない方は<a href="mailto:sample@example.com">お問い合わせ</a>よりメール送信してください。<br>（<a href="mailto:sample@example.com">お問い合わせ</a>の文字をクリックしていただくとメールソフトが起動します。）</span>
               </div>
-            </fieldset>
+              </div>
+              </div>
           </form>
           <hr><br>
           <p><font size="5">【新着情報】</font></p>
@@ -51,7 +53,7 @@
           <hr><br>
           <div>
 　　　<br><br>
-            <p class="text-center"><font size="6">舞踏倶楽部の特長</font></p><br>
+            <p class="text-center"><font size="5">舞踏倶楽部の特長</font></p><br>
             <h4>日本初！社交ダンサー（競技ダンサー）専用の会員制コミュニティサイト</h4>
             <p>舞踏倶楽部は、社交ダンスという趣味や仕事を持つダンサーに、素敵な出会いと、更なる楽しさ、ダンスに磨きをかけるサービスをご提供する、会員制コミュニティサイトです。ご自身のプロフィールを無料で登録してみましょう！</p>
             <br>
@@ -85,7 +87,7 @@
             <h4>現在は、関東版（東京都、神奈川県、千葉県、埼玉県、茨城県、栃木県、群馬県）としてサービスを開始しております。順次全国展開する予定でございます。関東圏以外のお客様も、現時点からご登録頂くことは出来ますので、ぜひ無料会員をご登録ください。</h4>
           </div><br><br>
           <hr>
-                   <p class="text-center"><font size="6">まずは無料会員に登録をしてみましょう</font></p>
+                   <p class="text-center"><font size="5">まずは無料会員に登録をしてみましょう</font></p>
          <br>
             <p><font size="5"><strong>無料会員になると</strong></font></p>
             <p>◇定期的にダンスのお相手候補の写真付きの情報をメールで受け取ることができます。</p>
@@ -99,18 +101,6 @@
           <p><br>
             <br>
           </p>
-          <form class="form-horizontal" action="http://buto.jp/mail_confirm.html">
-            <fieldset>
-              <legend class="text-center"><font size="6">【さっそく無料会員登録をしてみましょう！】</font></legend>
-              <div class="text-center">
-                <span class="help-block">下記にご自分のメールアドレスをご入力ください。ご入力後「メール送信」ボタンを押してください。</span><br>
-                <input type="text" class="input-xlarge" placeholder="メールアドレスを入力してください">
-                <button type="submit" class="btn"><i class="icon-envelope"></i>　メール送信</button><br><br>
-                <span class="help-block">※ご自分のメールアドレスがわからない方は<a href="mailto:sample@example.com">お問い合わせ</a>よりメール送信してください。<br>（<a href="mailto:sample@example.com">お問い合わせ</a>の文字をクリックしていただくとメールソフトが起動します。）</span>
-              </div>
-            </fieldset>
-          </form>
-          <!-- ▼ テスト登録フォーム ▼ -->
           <form class="form-horizontal" role="form" action="http://buto.xpne.info/master/opAuthMailAddress/requestRegisterURL" method="POST">
               <input type="hidden" name="request_register_url[course_id]" value="1">
               <legend class="text-center"><font size="6">【さっそく無料会員登録をしてみましょう！】</font></legend>
@@ -124,24 +114,21 @@
               </div>
               </div>
           </form>
-          <!-- ▲ テスト登録フォーム ▲ -->
           <hr><br><br>
-          <p class="text-center"><font size="6">【協力会社様一覧】</font></p><br>
+          <p class="text-center"><font size="5">【協力会社様】</font></p><br>
           <ul class="row">
-              <li class="span3"><a href="http://buto.jp/#"><img src="./舞踏倶楽部_files/brandlogo_chrisanne.jpg"></a></li>
-              <li class="span3"><a href="http://buto.jp/#"><img src="./舞踏倶楽部_files/brandlogo_chrisanne.jpg"></a></li>
-              <li class="span3"><a href="http://buto.jp/#"><img src="./舞踏倶楽部_files/brandlogo_chrisanne.jpg"></a></li>
-              <li class="span3"><a href="http://buto.jp/#"><img src="./舞踏倶楽部_files/brandlogo_chrisanne.jpg"></a></li>
+              <li class="span3"><a href="http://dancefan.jp"><img src="./img/ad/dancefan_ad.jpg"></a></li>
+              <li class="span3"><a href="http://bossiweb.com/shinseiki/"><img src="./img/ad/hallshinseiki_ad.jpg"></a></li>
+              <li class="span3"><a href="http://jedor-japan.com"><img src="./img/ad/jedor_ad.jpg"></a></li>
+              <li class="span3"><a href="http://giomio.com"><img src="./img/ad/giomio_ad.jpg""></a></li>
+              <br><br>
+          <ul class="row"></a></li>
           </ul><br>
           <ul class="row">
-              <li class="span3"><a href="http://buto.jp/#"><img src="./舞踏倶楽部_files/jpg"></a></li>
+              <li class="span3"><a href="#"><img src="./img/ad/.jpg"></a></li>
               
           </ul><br><br>
-
-        </div>
-      </div>
-      
-<div id="footer" class="well well-lg">
+  <div id="footer" class="well well-lg">
         <div class="row-fluid">
           <div class="span3">
             <address>
@@ -151,37 +138,36 @@
               <abbr title="Fax">FAX:</abbr> (123) 456-7890<br>
               <abbr title="Mail">MAIL:</abbr> <a href="mailto:#">sample@example.com</a>
             </address>
-            <p>© Company 2013</p>
+            <p>&copy; Company 2013</p>
           </div>
           <div class="span2">
             <h5>舞踏倶楽部について</h5>
             <ul>
-              <li><a href="http://buto.jp/#">利用規約</a></li>
-              <li><a href="http://buto.jp/#">プライバシーポリシー</a></li>
-              <li><a href="http://buto.jp/#">お問い合わせ</a></li>
+              <li><a href="#">利用規約</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">お問い合わせ</a></li>
             </ul>
           </div>
           <div class="span2">
             <h5>ご利用方法</h5>
             <ul>
-              <li><a href="http://buto.jp/#">使い方</a></li>
-              <li><a href="http://buto.jp/#">ヘルプ</a></li>
+              <li><a href="#">使い方</a></li>
+              <li><a href="#">ヘルプ</a></li>
             </ul>
           </div>
           <div class="span5">
             <h5>外部リンク</h5>
             <ul>
-              <li><a href="http://buto.jp/#">舞踏倶楽部Twitter</a></li>
-              <li><a href="http://buto.jp/#">舞踏倶楽部Facebookページ</a></li>
-              <li><a href="http://buto.jp/#">舞踏倶楽部ブログ</a></li>
-              <li><a href="http://buto.jp/#">ダンスファンホームページ</a></li>
-              <li><a href="http://buto.jp/#">新世紀ホームページ</a></li>
+              <li><a href="#">舞踏倶楽部Twitter</a></li>
+              <li><a href="#">舞踏倶楽部Facebookページ</a></li>
+              <li><a href="#">舞踏倶楽部ブログ</a></li>
+              <li><a href="#">ダンスファンホームページ</a></li>
+              <li><a href="#">新世紀ホームページ</a></li>
             </ul>
           </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
     </div>
-  
-
-</body></html>
+  </body>
+</html>

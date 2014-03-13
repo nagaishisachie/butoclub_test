@@ -1,0 +1,77 @@
+body, li{ 
+    font: inherit;
+    line-height: 1;
+}
+body{
+    font-family:'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro W3','ƒƒCƒŠƒI',Meiryo,'‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+}
+img {
+    width: 100%; height: auto; max-width: 100% !important;
+}
+h2 {
+    text-align:center;
+}
+h3 {
+    text-align:center;
+}
+#top_ttl {
+    margin-top: 10px;
+    float:left;
+}
+#top_menu {
+    float:left;
+}
+#navi {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+#navi a {
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+}
+#navi_menu {
+    visibility:hidden;
+    height:0px;
+    line-height: 0px;
+}
+#news_area {
+    height:95px;
+    overflow:auto; 
+}
+li.nav_area {
+    height: 60px;
+    line-height: 80px;
+    clear:both;
+    margin-right: 30px;
+    display: inline-block;
+    position: relative;
+}
+div.flow_area {
+    float:left;
+    padding-right:15px;
+    margin-bottom:20px;
+}
+div.kaiin_area {
+    float:left;
+    padding-right:15px;
+    margin-bottom:30px;
+}
+div.ad_area {
+    float:left;
+    padding-right:15px;
+    margin-bottom:20px;
+}
+p.menu_area {
+    font-size:16px;
+    text-align:right;
+}
+
+/* ƒfƒXƒNƒgƒbƒv—p */
+.tinynav { display: none }
+
+/* ƒ‚ƒoƒCƒ‹—p */
+@media screen and (max-width: 1200px) {
+    .tinynav { display: block }
+    #nav { display: none }
+}

@@ -9,9 +9,15 @@
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/flexslider.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/jquery.ah-placeholder.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
+    <script src="./js/tinynav.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -23,25 +29,30 @@
           <div class="well well-lg">
             <h4>ご入力いただきましたメールアドレス宛に、確認メールを送信いたしました。<br>お届けしたメール本文に会員登録用のURLが記載されております。<br>上記、会員登録用のURLをクリックして、会員登録を続けてください。</h4>
             <p>※メール内のURLは、お届けから24時間以内のみお使いいただけます。<br>　24時間を過ぎますとメール内のURLはご利用いただけませんので、あらかじめご了承くださいませ。<br>※お送りしました確認メールが迷惑メールフォルダに入ってしまうことがございますので、<br>　届いていない場合は迷惑メールフォルダの方もご確認ください。<br>※入力されたメールアドレスに誤りがあるとメールが届きません。<br>※確認メールが届かない場合は、再度、新規会員登録よりお手続きください。</p>
-          </div><br>
+          </div>
+          <p>&nbsp;</p>
           <legend>舞踏倶楽部の協力会社様ホームページも併せてご覧ください</legend>
-          <br>
-          <ul class="row">
-              <li class="span3"><a href="#"><img src="http://ballroomnet-online.jp/cp-bin/eccube/html/upload/save_image/brandlogo_chrisanne.jpg"></a></li>
-              <li class="span3"><a href="#"><img src="http://ballroomnet-online.jp/cp-bin/eccube/html/upload/save_image/brandlogo_chrisanne.jpg"></a></li>
-              <li class="span3"><a href="#"><img src="http://ballroomnet-online.jp/cp-bin/eccube/html/upload/save_image/brandlogo_chrisanne.jpg"></a></li>
-              <li class="span3"><a href="#"><img src="http://ballroomnet-online.jp/cp-bin/eccube/html/upload/save_image/brandlogo_chrisanne.jpg"></a></li>
-          </ul><br>
-          <ul class="row">
-              <li class="span3"><a href="#"><img src="./img/ad/.jpg"></a></li>
+          <p>&nbsp;</p>
+          <div>
+            <div id="ad_area"><a href="#"><img src="./img/ad/dancefan_ad.jpg" /></a></div>
+            <div id="ad_area"><a href="#"><img src="./img/ad/hallshinseiki_ad.jpg" /></a></div>
+            <div id="ad_area"><a href="#"><img src="./img/ad/jedor_ad.jpg" /></a></div>
+            <div id="ad_area"><a href="#"><img src="./img/ad/giomio_ad.jpg" /></a></div>
+            <div id="ad_area"><a href="#"><img src="./img/ad/ballroomnet_ad.jpg" /></a></div>
+            <div id="ad_area"><a href="#"><img src="./img/ad/gramaga_ad.jpg" /></a></div>
+          </div>
+          <br clear="left">
+          
           <div class="form-actions" style="background-color: white;">
             <button class="btn btn-large span2" onclick="window.close(); return false;">閉じる</button>
           </div>
-          </ul><br><br>
+          </ul>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
 
         </div>
       </div>
-
+      
       <div id="footer" class="well well-lg">
         <div class="row-fluid">
           <div class="span3">
@@ -54,7 +65,7 @@
             </address>
             <p>&copy; Company 2013</p>
           </div>
-          <div class="span2">
+          <div class="span3">
             <h5>舞踏倶楽部について</h5>
             <ul>
               <li><a href="#">利用規約</a></li>
@@ -65,22 +76,23 @@
           <div class="span2">
             <h5>ご利用方法</h5>
             <ul>
-              <li><a href="#">使い方</a></li>
-              <li><a href="#">ヘルプ</a></li>
+              <li><a href="http://buto.jp/#advantage">ご利用方法</a></li>
+              <li><a href="#">よくあるご質問</a></li>
             </ul>
           </div>
-          <div class="span5">
+          <div class="span4">
             <h5>外部リンク</h5>
             <ul>
-              <li><a href="#">舞踏倶楽部Twitter</a></li>
-              <li><a href="#">舞踏倶楽部Facebookページ</a></li>
-              <li><a href="#">舞踏倶楽部ブログ</a></li>
-              <li><a href="#">ダンスファンホームページ</a></li>
-              <li><a href="#">新世紀ホームページ</a></li>
+              <li><a href="http://blog.buto.jp/" target="_blank">舞踏倶楽部ブログ</a></li>
+              <li><a href="#" target="_blank">舞踏倶楽部Twitter</a></li>
+              <li><a href="#" target="_blank">舞踏倶楽部Facebookページ</a></li>
+              <li><a href="#" target="_blank">ダンスファンホームページ</a></li>
+              <li><a href="#" target="_blank">新世紀ホームページ</a></li>
             </ul>
           </div>
         </div>
       </div>
+
     </div>
   </body>
 </html>

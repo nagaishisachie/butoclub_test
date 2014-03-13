@@ -62,14 +62,17 @@
                     <option>31</option>
                   </select>
                   <span> 日</span>
-                  <span class="help-block">※プロフィールには年代欄に○０代前半／後半と記載されます。</span>
                 </div>
               </div>
               <div class="control-group">
                 <label class="control-label">携帯電話番号:</label>
                 <div class="controls">
                   <input type="text" class="input-mini">
-                  <span class="help-block">※ハイフン無し。プロフィールに反映しません。当倶楽部からの緊急連絡時にショートメールを送る際使用します。</span>
+                  <span> - </span>
+                  <input type="text" class="input-mini">
+                  <span> - </span>
+                  <input type="text" class="input-mini">
+                  <span class="help-block">※携帯電話のショートメールを送る際に使用します。</span>
                 </div>
               </div>
               <div class="control-group">
@@ -88,7 +91,7 @@
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label">お住まい:</label>
+                <label class="control-label">お住まいの場所:</label>
                 <div class="controls">
                   都道府県
                   <select class="span2">
@@ -103,7 +106,7 @@
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label">練習したいエリア:</label>
+                <label class="control-label">練習したい場所:</label>
                 <div class="controls">
                   都道府県 
                   <select class="span2">
@@ -115,7 +118,6 @@
                     <option>-</option>
                     <option>旭川市</option>
                   </select>
-                  <span class="help-block">※練習場の指定等がある場合は、下欄のお相手へのメッセージへ記載下さい</span>
                 </div>
               </div>
               <div class="control-group">
@@ -148,21 +150,32 @@
                 <label class="control-label">プロフィール写真１:</label>
                 <div class="controls">
                   <input type="file" class="input-file">
-                  <span class="help-block">※お相手紹介メールに添付されます。</span>
                 </div>
               </div>
               <div class="control-group">
                 <label class="control-label">プロフィール写真２:</label>
                 <div class="controls">
                   <input type="file" class="input-file">
-                  <span class="help-block">※お相手紹介メールに添付されます。</span>
                 </div>
               </div>
               <div class="control-group">
                 <label class="control-label">プロフィール写真３:</label>
                 <div class="controls">
                   <input type="file" class="input-file">
-                 <span class="help-block">※お相手紹介メールに添付されます。</span>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">ご利用暗証番号:</label>
+                <div class="controls">
+                  <input type="password" class="input-mini">
+                  <span>（※半角数字 4文字）</span>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" >ご利用暗証番号:<br>(確認用 再入力)</label>
+                <div class="controls">
+                  <input type="password" class="input-mini">
+                  <span class="help-block">※当サイトご利用時のパスワードをご入力ください。</span>
                 </div>
               </div><br>
               <hr>
@@ -192,32 +205,6 @@
                     <option>-</option>
                     <option>0</option>
                   </select> 年
-                </div>
-              </div>
-                <div class="control-group">
-                <label class="control-label">競技経験の有無:</label>
-                <div class="controls">
-                  <label class="radio inline">
-                    <input type="radio" name="kyougi" value="kyougi1" checked>
-                    有
-                  </label>
-                  <label class="radio inline">
-                    <input type="radio" name="kyougi" value="kyougi2">
-                    無
-                  </label>
-                </div>
-              </div>
-               <div class="control-group">
-                <label class="control-label">学連経験の有無:</label>
-                <div class="controls">
-                  <label class="radio inline">
-                    <input type="radio" name="gak" value="gak1" checked>
-                    有
-                  </label>
-                  <label class="radio inline">
-                    <input type="radio" name="gak" value="gak2">
-                    無
-                  </label>
                 </div>
               </div>
               <div class="control-group">
@@ -262,18 +249,6 @@
               </div><br>
               <hr>
               <h4>【ご希望のお相手について】</h4>
-                <div class="control-group">
-                <label class="control-label">ダンスのお相手を探していますか:</label>
-                <div class="controls">
-                  <label class="radio inline">
-                    <input type="radio" name="oaiteboshu" value="oaiteboshu1" checked>
-                    探している</label>
-                  <label class="radio inline">
-                    <input type="radio" name="oaiteboshu" value="oaiteboshu2">
-                    探していない（※お相手紹介メールは届きません）
-                  </label>
-                </div>
-              </div>
               <div class="control-group">
                 <label class="control-label">希望するお相手:</label>
                 <div class="controls">
@@ -284,53 +259,19 @@
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label">希望するお相手の最低級(スタンダード):</label>
+                <label class="control-label">希望するお相手の級:</label>
                 <div class="controls">
-                  <span>プロ・アマ：</span>
-                  <select class="span2">
+                  <select class="span3">
                     <option>-</option>
-                    <option>アマチュア</option>
-                  </select>
-                  <span>　団体：</span>
-                  <select class="span2">
-                    <option>-</option>
-                    <option>JBDF</option>
-                  </select>
-                  <span>　級：</span>
-                  <select class="span2">
-                    <option>-</option>
-                    <option>なし</option>
-                  </select>
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label">希望するお相手の最低級(ラテン):</label>
-                <div class="controls">
-                  <span>プロ・アマ：</span>
-                  <select class="span2">
-                    <option>-</option>
-                    <option>アマチュア</option>
-                  </select>
-                  <span>　団体：</span>
-                  <select class="span2">
-                    <option>-</option>
-                    <option>JBDF</option>
-                  </select>
-                  <span>　級：</span>
-                  <select class="span2">
-                    <option>-</option>
-                    <option>なし</option>
+                    <option>5級以上</option>
                   </select>
                 </div>
               </div>
               <div class="control-group">
                 <label class="control-label">希望するお相手の身長:</label>
                 <div class="controls">
-                  <input type="text" class="input-mini"> 
-                  cm
-                ー
-                  <input type="text" class="input-mini">
-cm</div>
+                  <input type="text" class="input-mini"> cm
+                </div>
               </div>
               <div class="control-group">
                 <label class="control-label">希望するお相手の<br>ダンス歴:</label>
@@ -403,22 +344,12 @@ cm</div>
                 </div>
               </div>
               <div class="control-group">
-                <label class="control-label">未来のお相手やお仲間へのメッセージ:</label>
+                <label class="control-label">未来のお相手への一言:</label>
                 <div class="controls">
                   <textarea rows="6" class="input-xlarge"></textarea>
-                  <br>
-              </div>
-              </div>
-                            <hr>
-                            <div class="control-group"><br>
-                <label class="control-label" >ご利用暗証番号:<br>
-                </label>
-                <div class="controls">
-                  <input type="password" class="input-mini">
-                  <span>（※半角数字 4文字）</span>
-                  <span class="help-block">※当サイトご利用、決済を行う際等に使用します。</span>
                 </div>
               </div><br>
+              
               <div class="form-actions" style="background-color: white;">
                 <button type="submit" class="btn btn-large span2">次へ</button>
               </div>
